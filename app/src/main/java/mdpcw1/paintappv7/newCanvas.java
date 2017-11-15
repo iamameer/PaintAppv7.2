@@ -74,8 +74,6 @@ public class newCanvas extends AppCompatActivity {
         txtSize = findViewById(R.id.txtSize);
         txtSize.setTextColor(Color.WHITE);
         txtSize.setText(" Size: "+Integer.toString(fpv.getBrushWidth()));
-        txtSize.setClickable(false);
-        txtSize.setEnabled(false);
 
         btnRound = findViewById(R.id.btnRound);
         btnRect = findViewById(R.id.btnRect);
@@ -127,7 +125,13 @@ public class newCanvas extends AppCompatActivity {
                 public void onClick(View view) {
                     //start setBrush activity
                     Intent intent = new Intent(newCanvas.this,setBrush.class);
-                    startActivity(intent);
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("brushSize",fpv.getBrushWidth());
+                    if(fpv.getBrush()== Paint.Cap.BUTT){brushType=3;}
+                    bundle.putInt("brushType",brushType);
+                    intent.putExtras(bundle);
+                    startActivityForResult(intent,CODE_BRUSH);
+                    //startActivity(intent);
                 }
             });
 
@@ -333,7 +337,7 @@ public class newCanvas extends AppCompatActivity {
                 if (resultCode==RESULT_OK){
                     Bundle bundle = data.getExtras();
                     fpv.setBrushWidth(bundle.getInt("brushSize"));
-                    txtSize.setText(String.valueOf(fpv.getBrushWidth()));
+                    txtSize.setText("Size: "+String.valueOf(fpv.getBrushWidth()));
                     switch (bundle.getInt("brushType")){
                         case 1:
                             btnRound.performClick();
