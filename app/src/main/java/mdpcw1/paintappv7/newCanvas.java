@@ -74,6 +74,8 @@ public class newCanvas extends AppCompatActivity {
         txtSize = findViewById(R.id.txtSize);
         txtSize.setTextColor(Color.WHITE);
         txtSize.setText(" Size: "+Integer.toString(fpv.getBrushWidth()));
+        txtSize.setClickable(false);
+        txtSize.setEnabled(false);
 
         btnRound = findViewById(R.id.btnRound);
         btnRect = findViewById(R.id.btnRect);
