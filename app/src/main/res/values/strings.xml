@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">PaintApp v7</string>
+    <string name="newCanvas">PaintApp v7 - New Drawing</string>
+    <string name="newCanvasButton">Blank Canvas</string>
+    <string name="loadPic">Load Picture</string>
+    <string name="setBrush">Select Brush Type and Size</string>
+    <string name="selectColor">Select Color</string>
+    <string name="colorPreview">Color Preview: </string>
+    <string name="desc">desc</string>
+
+    <string name="brushRound">Round brush</string>
+    <string name="brushRect">Rectangle brush</string>
+    <string name="brushButt">Butt brush</string>
+
+    <string name="maxbar">200</string>
+    <string name="minbar">10</string>
+
+    <string name="currColor">Current Color: </string>
+    <string name="currSize">Current Size </string>
+    <string name="currType">Current Type: </string>
+
+    <string name="OK">OK</string>
+    <string name="CANCEL">CANCEL</string>
+
+    <string name="type">Brush Type:</string>
+    <string name="round">Round</string>
+    <string name="rect">Square</string>
+    <string name="butt">Butt</string>
+    <string name="size">Brush Size:</string>
+    <string name="o">0</string>
+    <string name="loo">100</string>
+    <string name="mult">Multiplier:</string>
+
+    <string name="intro">
+        \tPaintAppv7\n\n
+        Features:\n
+        1) Change Brush Size via slider\n
+        2) Choose Brush Color via \n drop-down list
+        \n 3) Select Brush Type by tapping \n
+        the Round icon or Square icon\n\n
+
+        Want some surprise?\n
+        Press any of those features for \n 2 seconds
+        and see what happen!
+    </string>
+
+    <string-array name="colors">
+        <item>Brush Color :</item>
+        <item>Red</item>
+        <item>Cyan</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Magenta</item>
+        <item>Dark Gray</item>
+        <item>Gray</item>
+        <item>White</item>
+        <item>Black</item>
+    </string-array>
+
+</resources>
